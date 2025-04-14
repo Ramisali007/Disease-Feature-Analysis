@@ -1,0 +1,16 @@
+
+# Critical Analysis
+
+## TF-IDF vs. One-Hot Encoding
+- **TF-IDF Advantage**: Weights features by importance, capturing semantic relationships (e.g., 'chest pain' weighted higher for cardiovascular diseases). Visualizations show tighter clusters for TF-IDF.
+- **One-Hot Limitation**: Binary representation treats all features equally, leading to higher sparsity (0.9534 vs. TF-IDF’s 0.8905) and less discriminative power, as seen in scattered PCA/SVD plots.
+
+## Clinical Relevance
+- TF-IDF clusters align with clinical categories (cardiovascular, neurological), suggesting potential for diagnostic support.
+- Interpretability of TF-IDF weights aids clinical explanation (e.g., key symptoms driving predictions).
+
+## Limitations
+- **Dataset**: With only 25 samples (one per disease), classification is challenging. Leave-One-Out CV was unsuitable, as the test class is absent from training, leading to zero metrics. Evaluation on training data was used instead, limiting generalization insights.
+- **Features**: Missing lab results or temporal data reduces clinical applicability. High-dimensional TF-IDF features (reduced to 500) may still include noise.
+- **Encoding**: TF-IDF may miss rare but critical features; one-hot encoding ignores feature interactions.
+- **Recommendation**: Future work should explore clustering or similarity-based methods, as classification with one sample per class is inherently limited.
