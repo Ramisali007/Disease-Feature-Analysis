@@ -1,11 +1,6 @@
-Absolutely! Here's a **refined version of your `README.md`**, keeping all the valuable content but enhancing clarity, consistency, formatting, and readability for both developers and non-technical readers.
-
----
 
 ```markdown
 # 🧬 Disease Classification: TF-IDF vs. One-Hot Encoding
-
-![Project Banner](https://via.placeholder.com/800x200?text=Disease+Classification+TF-IDF+vs+One-Hot+Encoding)
 
 This project evaluates how different feature encoding techniques (TF-IDF vs. One-Hot Encoding) impact disease classification performance using KNN and Logistic Regression, with dimensionality reduction via PCA/SVD.
 
